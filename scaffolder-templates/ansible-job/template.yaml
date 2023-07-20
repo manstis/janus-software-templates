@@ -98,6 +98,8 @@ spec:
       action: github:repo:push
       input:
         repoUrl: github.com?owner=${{ parameters.githubOrg }}&repo=${{ parameters.repoName }}
+        protectDefaultBranch: false
+        protectEnforceAdmins: false
 
     - id: register
       name: Registering the Catalog Info Component
