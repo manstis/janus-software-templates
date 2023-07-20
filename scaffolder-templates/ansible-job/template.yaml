@@ -86,6 +86,7 @@ spec:
       input:
         url: ../../scaffolder-skeletons/catalog-info-skeleton/
         values:
+          system: ${{ parameters.system }}
           githubOrg: ${{ parameters.githubOrg }}
           repoName: ${{ parameters.repoName }}
           owner: ${{ parameters.owner }}
